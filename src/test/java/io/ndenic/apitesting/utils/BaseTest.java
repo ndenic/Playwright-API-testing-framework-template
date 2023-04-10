@@ -4,30 +4,37 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.ndenic.apitesting.service.APIService;
+import io.ndenic.apitesting.service.APIServiceException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest{
 
-    public APIService manager;
-    protected Map<String, String> endpoint = new HashMap<>();
+    protected APIService apiService;
+    protected static final Map<String, String> ENDPOINT = new HashMap<>();
+    private static final String CONTENT_TYPE_HEADER = "content-type";
+    private static final String APPLICATION_JSON = "application/json";
 
-    public BaseTest() {
-        endpoint.put("login", "/example/login");
+    static {
+        ENDPOINT.put("login", "/example/login");
     }
 
     @BeforeClass(groups = {"regression", "smoke"})
     public void setup() {
-        manager = new APIService();
+        apiService = new APIService();
         Map<String, String> headers = new HashMap<>();
-        headers.put ("content-type", "application/json");
-        headers.put ("Accept", "application/json");
-        manager.setApiRequestContext(Helper.getApiUrl(), headers);
+        headers.put(CONTENT_TYPE_HEADER, APPLICATION_JSON);
+        headers.put("Accept", APPLICATION_JSON);
+        apiService.setApiRequestContext(Helper.getApiUrl(), headers);
     }
 
     @AfterClass
     public void tearDown() {
-        manager.disposeAPIRequestContext();
-        manager.closePlaywright();
+        try {
+            apiService.disposeAPIRequestContext();
+            apiService.closePlaywright();
+        } catch (Exception e) {
+            throw new APIServiceException("Error sending request: " + e.getMessage(), e);
+        }
     }
 }
