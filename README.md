@@ -2,6 +2,9 @@
 <p align="center">
   <img width="460" height="300" src="https://i.ibb.co/L9sVXFN/7fljyy.jpg">
 </p>
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 This is an API test framework built using Maven and mainly Playwright in Java. It is designed to test the RESTful APIs using the Service Layer Pattern.
 This is a Playwright API framework written in Java and using TestNG as the testing framework, with Maven as the build automation tool. The framework's structure is as follows:
 
