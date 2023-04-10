@@ -1,4 +1,7 @@
-# Playwright API Test Framework
+<h1 align="center"> Playwright API Test Framework </h1>
+<p align="center">
+  <img width="460" height="300" src="https://i.ibb.co/L9sVXFN/7fljyy.jpg">
+</p>
 This is an API test framework built using Maven and mainly Playwright in Java. It is designed to test the RESTful APIs using the Service Layer Pattern.
 This is a Playwright API framework written in Java and using TestNG as the testing framework, with Maven as the build automation tool. The framework's structure is as follows:
 
