@@ -51,6 +51,10 @@ public class APIService {
         return response;
     }
 
+    public APIResponse sendRequest(String method, String endpoint) {
+        return sendRequest(method, endpoint, null);
+    }
+
     public void disposeAPIRequestContext() {
         if (apiRequestContext != null) {
             apiRequestContext.dispose();
