@@ -47,4 +47,4 @@ Make your changes and commit them.
 Push your changes to your fork.
 Submit a pull request to the original repository.
 ## License
-This framework is licensed under the MIT License. Please see the LICENSE file for more information.
+This framework is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>. See the LICENSE file for details.
