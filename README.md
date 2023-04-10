@@ -1,4 +1,4 @@
-<h1 align="center"> Playwright API Test Framework </h1>
+<h1 align="center"> API Test Framework </h1>
 <p align="center">
   <img width="460" height="300" src="https://i.ibb.co/L9sVXFN/7fljyy.jpg">
 </p>
