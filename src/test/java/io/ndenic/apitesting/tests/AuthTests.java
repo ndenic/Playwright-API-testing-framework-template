@@ -18,7 +18,7 @@ public class AuthTests extends BaseTest {
     @Feature("Authentication test")
     @Story("Test Auth API endpoint")
     public void authTestPost(){
-        APIResponse response = manager.sendRequest("POST", endpoint.get("login"), RequestOptions.create().setData(""));
+        APIResponse response = apiService.sendRequest("POST", ENDPOINT.get("login"), RequestOptions.create().setData(""));
         assertEquals(response.status(), HttpStatus.SC_OK);
     }
 }
