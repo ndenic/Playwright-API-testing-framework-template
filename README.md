@@ -38,6 +38,42 @@ This framework has the following dependencies:
 
 You can find more information about these dependencies in the pom.xml file.
 
+## Structure 
+```bash
+📦 playwright-api-testing-framework   
+├─ .gitignore  
+├─ LICENSE  
+├─ README.md  
+└─ src  
+   ├─ main  
+   │  ├─ java  
+   │  │  └─ io  
+   │  │     └─ ndenic  
+   │  │        └─ apitesting  
+   │  │           ├─ model  (POJO classes)
+   │  │           ├─ data  
+   │  │           │  ├─ APIService.java  
+   │  │           │  └─ APIServiceExceptionHandler.java  
+   │  │           ├─ Utils  
+   │  │           │  ├─ Helper.java  
+   │  │           │  └─ product  
+   │  └─ resources  
+   │     ├─ config.dev.properties  
+   |     ├─ config.prod.properties
+   |     └─ allure.properties
+   └─ test  
+      ├─ java  
+      │  └─ io  
+      │     └─ ndenic  
+      │        └─ apitesting  
+      │           ├─ tests  
+      │           └─ util  
+      │              └─ BaseTest.java  
+      └─ resources  
+         ├ testdata 
+         └─ schemas
+```
+
 ## Contributing
 Contributions to this framework are welcome. To contribute, please follow these steps:
 
