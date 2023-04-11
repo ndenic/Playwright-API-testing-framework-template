@@ -59,8 +59,8 @@ You can find more information about these dependencies in the pom.xml file.
    │  │           │  └─ product  
    │  └─ resources  
    │     ├─ config.dev.properties  
-   |     ├─ config.prod.properties
-   |     └─ allure.properties
+   │     ├─ config.prod.properties
+   │     └─ allure.properties
    └─ test  
       ├─ java  
       │  └─ io  
