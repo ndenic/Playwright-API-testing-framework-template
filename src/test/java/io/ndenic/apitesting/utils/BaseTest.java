@@ -16,7 +16,7 @@ public class BaseTest{
     private static final String APPLICATION_JSON = "application/json";
 
     static {
-        ENDPOINT.put("login", "/example/login");
+        ENDPOINT.put("getCountryByName", "/v3.1/name/");
     }
 
     @BeforeClass(groups = {"regression", "smoke"})

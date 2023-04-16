@@ -14,7 +14,7 @@
 
         <classes>
 
-            <class name="io.ndenic.apitesting.tests.AuthTests">
+            <class name="io.ndenic.apitesting.tests.CountryTests">
             </class>
 
         </classes>
